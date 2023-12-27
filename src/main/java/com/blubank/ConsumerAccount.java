@@ -1,4 +1,4 @@
-package banking;
+package com.blubank;
 
 /**
  * Account implementation for consumer (domestic) customers.

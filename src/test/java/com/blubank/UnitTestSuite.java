@@ -1,4 +1,4 @@
-package banking;
+package com.blubank;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

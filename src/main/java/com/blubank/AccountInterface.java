@@ -1,4 +1,4 @@
-package banking;
+package com.blubank;
 
 /**
  * The public contract for an Account.

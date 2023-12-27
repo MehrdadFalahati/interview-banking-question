@@ -1,4 +1,4 @@
-package banking;
+package com.blubank;
 
 /**
  * Abstract Account Holder.

@@ -1,4 +1,4 @@
-package banking;
+package com.blubank;
 
 /**
  * Abstract bank account.
@@ -10,10 +10,7 @@ public abstract class Account implements AccountInterface {
     private double balance;
 
     protected Account(AccountHolder accountHolder, Long accountNumber, int pin, double startingDeposit) {
-        this.accountHolder = accountHolder;
-        this.accountNumber = accountNumber;
-        this.pin = pin;
-        this.balance = startingDeposit;
+
     }
 
     public AccountHolder getAccountHolder() {
@@ -21,7 +18,7 @@ public abstract class Account implements AccountInterface {
     }
 
     public boolean validatePin(int attemptedPin) {
-        return this.pin == attemptedPin;
+        return false;
     }
 
     public double getBalance() {
@@ -33,16 +30,10 @@ public abstract class Account implements AccountInterface {
     }
 
     public void creditAccount(double amount) {
-        balance += amount;
+
     }
 
     public boolean debitAccount(double amount) {
-        if (amount <= 0) {
-            return false;
-        } else if (amount > balance) {
-            return false;
-        }
-        balance -= amount;
-        return true;
+        return false;
     }
 }
